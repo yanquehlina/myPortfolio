@@ -1,4 +1,11 @@
 /* General styling */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablet screens */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for mobile screens */
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -26,7 +33,7 @@ p {
 }
 
 /* Loader Styles */
-/* #loader {
+#loader {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -38,21 +45,21 @@ p {
     border-top: 8px solid #f50057;
     border-radius: 50%;
     animation: spin 2s linear infinite;
-} */
+}
 
-/* @keyframes spin {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-} */
+}
 
 /* Hide content initially */
-/* body.loading #content {
+body.loading #content {
     display: none;
 }
 
 body.loading #loader {
     display: block;
-} */
+}
 
 /* Navbar Styling */
 nav {
