@@ -1,272 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elton Asamoah - Portfolio</title>
+    <title>Maame Yankeh Cornelius - Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="loader"></div>
-    <div id="content" style="display:none;">
-       
-        <nav id="desktop-nav">
-            <div class="logo">Elton Asamoah</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    
-        <nav id="hamburger-nav">
-            <div class="logo">Elton Asamoah</div>
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <div class="hamburger-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <div id="content" style="display: none">
+      <nav id="desktop-nav">
+        <div class="logo">Maame Yankeh Cornelius</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav id="hamburger-nav">
+        <div class="logo">Maame Yankeh Cornelius</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/images/maame.jpg" alt="Profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">
+            Maame Yankeh <br />
+            Cornelius
+          </h1>
+          <p class="section__text__p2">Frontend Web Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('https://docs.google.com/document/d/1YDsVHdyIYsRAIMI7z9V24Fg2vTMIZtbF/edit?usp=sharing&ouid=105967645589935356204&rtpof=true&sd=true')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-Text-height">
+          <p class="section__text__p1">Get To Know More</p>
+          <h1 class="title">About Me</h1>
+        </div>
+
+        <div class="section-container">
+          <div class="about__pic-container">
+            <img
+              src="./assets/images/aboutme.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./images/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>
+                  3+ months <br />
+                  Frontend Web Development
+                </p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./images/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>
+                  MPhil in Accounting(UCC) <br />
+                  Web Development (Mest-Africa)
+                </p>
+              </div>
             </div>
-            <ul class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-        </nav>
-    
-        <section id="profile">
-            <div class="section__pic-container">
-                <img src="./images/elton.jpg" alt="Elton Asamoah profile picture">
+            <div class="text-container">
+              <p>
+                I'm a Junior Frontend Developer passionate about creating
+                visually appealing, user-friendly web interfaces. With a strong
+                foundation in HTML, CSS, and JavaScript, I specialize in
+                building responsive websites that adapt seamlessly across
+                devices. I'm proficient in frameworks like React and have
+                hands-on experience with version control using Git.
+                Additionally, I have experience deploying projects using hosting
+                platforms like Netlify, GitHub Pages and the likes. Constantly
+                eager to learn, I stay updated with the latest web technologies
+                to deliver efficient and modern solutions.
+              </p>
             </div>
-            <div class="section__text">
-                <p class="section__text__p1">Hello, I'm</p>
-                <h1 class="title">Elton Asamoah <br> Mantey</h1>
-                <p class="section__text__p2">Web Developer & Designer</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('https://docs.google.com/document/d/1bz_yq8NhYq5QrhRuOlABoWDxAGO-Rv-3/edit')">Download CV</button>
-                    <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-                </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-Text-height">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Experience</h1>
+        </div>
+        <div class="experience-details-container">
+          <table class="experience-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Skill</th>
+                <th>Proficiency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="4">Frontend Development</td>
+                <td>
+                  <img src="./images/html-5.png" alt="HTML icon" class="icon" />
+                  HTML
+                </td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="/images/css-3.png" alt="CSS icon" class="icon" />
+                  CSS
+                </td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="/images/java-script.png"
+                    alt="JavaScript icon"
+                    class="icon"
+                  />
+                  JavaScript
+                </td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="/images/physics.png"
+                    alt="React icon"
+                    class="icon"
+                  />
+                  React
+                </td>
+                <td>Intermediate</td>
+              </tr>
+
+              <tr>
+                <td rowspan="3">Other Skills</td>
+                <td>
+                  <img
+                    src="/images/github.png"
+                    alt="GitHub icon"
+                    class="icon"
+                  />
+                  Git/GitHub
+                </td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="/images/social-media.png"
+                    alt="Social Media icon"
+                    class="icon"
+                  />
+                  Social Media Management
+                </td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="/images/idea.png"
+                    alt="Problem Solving icon"
+                    class="icon"
+                  />
+                  Problem Solving
+                </td>
+                <td>Advanced</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-Text-height">
+          <p class="section__text__p1">My Recent</p>
+          <h1 class="title">Projects</h1>
+        </div>
+        <div class="projects-container">
+          <div class="project-card">
+            <img
+              src="./images/best-expense-management-tips.png"
+              alt="Project 1 Screenshot"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h2>Poulrty Bazaar</h2>
+              <p>
+                An e-commerce platform for poultry farmers, suppliers of poultry
+                feeds and logistics and poultry consumers.
+              </p>
+              <div class="project-buttons">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/yanquehlina/pBazaar')"
+                >
+                  Link to project
+                </button>
+              </div>
             </div>
-        </section>
-    
-        <section id="about">
-            <div class="section-Text-height">
-                <p class="section__text__p1">Get To Know More</p>
-                <h1 class="title">About Me</h1>
+          </div>
+          <div class="project-card">
+            <img
+              src="./images/event.jpg"
+              alt="Project 2 Screenshot"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h2>Event Management App</h2>
+              <p>A responsive event management platform.</p>
+              <div class="project-buttons">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/teamMERJ/eventManagement-FE')"
+                >
+                  Link to project
+                </button>
+              </div>
             </div>
-            
-            <div class="section-container">
-                <div class="about__pic-container">
-                    <img src="./images/elton.jpg" alt="Profile picture" class="about-pic" />
-                </div>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <img src="./images/experience.png" alt="Experience icon" class="icon" />
-                            <h3>Experience</h3>
-                            <p>3+ months <br /> Frontend Web Development</p>
-                        </div>
-                        <div class="details-container">
-                            <img src="./images/education.png" alt="Education icon" class="icon" />
-                            <h3>Education</h3>
-                            <p>BA in Economics <br /> Web Development (Mest-Africa)</p>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            I am a frontend web developer with a good foundation in React.js, JavaScript, HTML, and Tailwind CSS. After over five years in administrative roles, I have transitioned into tech, applying my organizational skills and attention to detail to build responsive and user-friendly web applications. I am passionate about creating clean, efficient code and continuously improving my craft.
-                        </p>
-                        
-                    </div>
-                </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="./images/portfol.png"
+              alt="Project 3 Screenshot"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h2>MerjFolio</h2>
+              <p>A dynamic portfolio website for professionals.</p>
+              <div class="project-buttons">
+                <button
+                  class="btn btn-color-1"
+                  onclick="window.open('https://github.com/teamMERJ/merjPortfolio')"
+                >
+                  Link to project
+                </button>
+              </div>
             </div>
-        </section>
-    
-        <section id="experience">
-            <div class="section-Text-height">
-                <p class="section__text__p1">Explore My</p>
-                <h1 class="title">Experience</h1>
-            </div>
-            <div class="experience-details-container">
-                <table class="experience-table">
-                    <thead>
-                        <tr>
-                            <th>Category</th>
-                            <th>Skill</th>
-                            <th>Proficiency</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td rowspan="4">Frontend Development</td>
-                            <td>
-                                <img src="./images/html-5.png" alt="HTML icon" class="icon" /> HTML
-                            </td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="/images/css-3.png" alt="CSS icon" class="icon" /> CSS
-                            </td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="/images/java-script.png" alt="JavaScript icon" class="icon" /> JavaScript
-                            </td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="/images/physics.png" alt="React icon" class="icon" /> React
-                            </td>
-                            <td>Intermediate</td>
-                        </tr>
-        
-                        <tr>
-                            <td rowspan="3">Other Skills</td>
-                            <td>
-                                <img src="/images/github.png" alt="Design icon" class="icon" /> Git/GitHub
-                            </td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="/images/social-media.png" alt="Photography icon" class="icon" /> Social Media Management
-                            </td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="/images/idea.png" alt="Problem Solving icon" class="icon" /> Problem Solving
-                            </td>
-                            <td>Advanced</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        
-    
-        <section id="projects">
-            <div class="section-Text-height">
-                <p class="section__text__p1">My Recent</p>
-                <h1 class="title">Projects</h1>
-            </div>
-            <div class="projects-container">
-                <div class="project-card">
-                    <img src="./images/best-expense-management-tips.png" alt="Project 1 Screenshot" class="project-image">
-                    <div class="project-info">
-                        <h2>Smart Expense Tracker</h2>
-                        <p>A web app for tracking expenses.</p>
-                        <div class="project-buttons">
-                            <button class="btn btn-color-1" onclick="window.open('https://github.com/elton-codes/expenseTracker')">Link to project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="./images/event.jpg" alt="Project 2 Screenshot" class="project-image">
-                    <div class="project-info">
-                        <h2>Event Management App</h2>
-                        <p>A responsive event management platform.</p>
-                        <div class="project-buttons">
-                            <button class="btn btn-color-1" onclick="window.open('https://github.com/teamMERJ/eventManagement-FE')">Link to project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="./images/portfol.png" alt="Project 3 Screenshot" class="project-image">
-                    <div class="project-info">
-                        <h2>MerjFolio</h2>
-                        <p>A dynamic porfolio website for professionals.</p>
-                        <div class="project-buttons">
-                            <button class="btn btn-color-1" onclick="window.open('https://github.com/teamMERJ/merjPortfolio')">Link to project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section id="testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonial-container">
-                <div class="testimonial-card active">
-                    <img src="./images/rock.jpeg" alt="Client 1" class="client-img">
-                    <p>"Elton demonstrated a high level of professionalism throughout our project. It was a pleasure working with him"</p>
-                    <cite>- Rocklyn</cite>
-                </div>
-                <div class="testimonial-card">
-                    <img src="./images/al.jpg" alt="Client 2" class="client-img">
-                    <p>"Elton is not only skilled in web development but also excellent at communication and understanding our needs."</p>
-                    <cite>- Albert</cite>
-                </div>
-                <div class="testimonial-card">
-                    <img src="./images/savi.jpg" alt="Client 3" class="client-img">
-                    <p>"I highly recommend Elton for any web development projects that need detailed frontend designs."</p>
-                    <cite>- Saviour</cite>
-                </div>
-            </div>
-            <div class="testimonial-pagination">
-                <button class="prev">❮</button>
-                <button class="next">❯</button>
-            </div>
-        </section>
-        
-        <section id="contact">
-            <div class="section-Text-height">
-                <p class="section__text__p1">Get In Touch</p>
-                <h1 class="title">Contact Me</h1>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form-container">
-                    <form action="https://formspree.io/f/mgvwyybe" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-color-1">Send Message</button>
-                    </form>
-                </div>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.2497154256994!2d-0.16204662635562853!3d5.676997032423907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9cc5a2a246b7%3A0x7a429425d6cacd90!2sMadina%20Social%20Welfare!5e0!3m2!1sen!2sgh!4v1723859557644!5m2!1sen!2sgh" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
-    
-        <footer>
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Elton Asamoah <br> Mantey</h2>
-                </div>
-                <div class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-socials">
-                    <img src="./images//linkedin.png" class="icon" onclick="location.href='https://www.linkedin.com/in/eltonasamoahmantey'" />
-                    <img src="/images/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/elton-codes'" />
-                    <img src="./images/whatssapp-big-logo.png" alt="My whatsapp profile" class="icon" onclick="location.href='https://wa.me/+233242084838'" />
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <p>© 2024 Elton Asamoah. All rights reserved.</p>
-            </div>
-        </footer>   
-    
-        <script src="./script.js"></script>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+          <div class="testimonial-card active">
+            <img src="./assets/images/abi.jpg" alt="Client 1" class="client-img" />
+            <p>
+              "Maame Yankeh demonstrated a high level of professionalism throughout our
+              project. It was a pleasure working with her."
+            </p>
+            <cite>- Abigail Asante</cite>
+          </div>
+          <div class="testimonial-card">
+            <img src="./assets/images/asamoah.jpg" alt="Client 2" class="client-img" />
+            <p>
+              "Maame Yankeh is not only skilled in web development but also excellent
+              at communication and understanding our needs."
+            </p>
+            <cite>- Elton Asamoah</cite>
+          </div>
+          <div class="testimonial-card">
+            <img src="./assets/images/kofi.jpeg" alt="Client 3" class="client-img" />
+            <p>
+              "I highly recommend Maame Yankeh for any web development projects that
+              need detailed frontend designs."
+            </p>
+            <cite>- Theophilus Gordon</cite>
+          </div>
+        </div>
+        <div class="testimonial-pagination">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-Text-height">
+          <p class="section__text__p1">Get In Touch</p>
+          <h1 class="title">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+          <div class="contact-form-container">
+            <form action="https://formspree.io/f/mgvwyybe" method="POST">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-color-1">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.2497154256994!2d-0.16204662635562853!3d5.676997032423907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9cc5a2a246b7%3A0x7a429425d6cacd90!2sMadina%20Social%20Welfare!5e0!3m2!1sen!2sgh!4v1723859557644!5m2!1sen!2sgh"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>
+              Maame Yankeh <br />
+              Cornelius
+            </h2>
+          </div>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-socials">
+            <img
+              src="./images//linkedin.png"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/maame-yankeh-cornelius'"
+            />
+            <img
+              src="/images/github.png"
+              alt="GitHub"
+              class="icon"
+              onclick="location.href='https://github.com/yanquehlina'"
+            />
+            <img
+              src="/images/email.png"
+              alt="Email"
+              class="icon"
+              onclick="location.href='mailto:c.maameyankeh@gmail.com'"
+            />
+            <img
+              src="./images/whatssapp-big-logo.png"
+              alt="My whatsapp profile"
+              class="icon"
+              onclick="location.href='https://wa.me/+233557425294'"
+            />
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>© 2024 Maame Yankeh Cornelius. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="./script.js"></script>
     </div>
-</body>
+  </body>
 </html>
